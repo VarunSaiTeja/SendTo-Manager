@@ -24,7 +24,9 @@ Public Class Form1
         ListView1.Clear()
         ListView1.Columns.Add("Shortcut", 80)
         ListView1.Columns.Add("Target", 300)
+
         files = IO.Directory.GetFiles(SendToFolder)
+
         For Each File As String In files
             no_ext = IO.Path.GetFileNameWithoutExtension(File)
             If (no_ext = "desktop") Then
@@ -72,12 +74,6 @@ Public Class Form1
     End Sub
 
     Private Sub Delete_srt_Click(sender As Object, e As EventArgs) Handles delete_srt.Click
-        files = IO.Directory.GetFiles(SendToFolder)
-        For Each File As String In files
-            If (File.Contains(ListView1.SelectedItems(0).Text)) Then
-                ext = IO.Path.GetExtension(File)
-            End If
-        Next
         My.Computer.FileSystem.DeleteFile(SendToFolder + ListView1.SelectedItems(0).Text + ext)
         Display()
     End Sub
@@ -88,15 +84,9 @@ Public Class Form1
 
     Private Sub Rename_srt_Click(sender As Object, e As EventArgs) Handles rename_srt.Click
         Dim NewName As String
-        files = IO.Directory.GetFiles(SendToFolder)
-        For Each File As String In files
-            If (File.Contains(ListView1.SelectedItems(0).Text)) Then
-                ext = IO.Path.GetExtension(File)
-            End If
-        Next
         NewName = InputBox("Enter new name for this shortcut" + vbNewLine + vbNewLine + "You will see this name in sendto menu" + vbNewLine + vbNewLine + "Click cancel if you don't won't to rename", "SendTo Manager", ListView1.SelectedItems(0).Text)
         If Not (NewName = Nothing) Then
-            My.Computer.FileSystem.RenameFile(SendToFolder + ListView1.SelectedItems(0).Text + ext, NewName + ".lnk")
+            My.Computer.FileSystem.RenameFile(SendToFolder + ListView1.SelectedItems(0).Text + ext, NewName + ext)
         End If
         Display()
     End Sub

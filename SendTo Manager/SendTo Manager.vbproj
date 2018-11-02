@@ -28,7 +28,7 @@
     <SupportUrl>https://github.com/varunsaiteja</SupportUrl>
     <ProductName>SendTo Manager</ProductName>
     <PublisherName>Varun</PublisherName>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -70,7 +70,7 @@
     <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>8C97A6611A74EB528EAA368B914D382791B31FF7</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>93225F2107344828345AD195D422827313124FE4</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>SendTo Manager_TemporaryKey.pfx</ManifestKeyFile>
