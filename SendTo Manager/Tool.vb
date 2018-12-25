@@ -58,6 +58,7 @@ Public Class Form1
                     For Each File As String In files
                         If (File.Contains(ListView1.SelectedItems(0).Text)) Then
                             ext = IO.Path.GetExtension(File)
+                            Exit For
                         End If
                     Next
                     SrtIcon.Image = Icon.ExtractAssociatedIcon(SendToFolder + ListView1.SelectedItems(0).Text + ext).ToBitmap
@@ -127,10 +128,6 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Display()
-    End Sub
-
-    Private Sub WhatsappToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WhatsappToolStripMenuItem.Click
-        Process.Start("https://api.whatsapp.com/send?phone=919010075670")
     End Sub
 
     Private Sub TelegramToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TelegramToolStripMenuItem.Click

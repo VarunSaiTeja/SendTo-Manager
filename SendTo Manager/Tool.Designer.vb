@@ -36,7 +36,6 @@ Partial Class Form1
         Me.SrtTitle = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ContactToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WhatsappToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TelegramToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.YouTubeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DonateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -162,17 +161,10 @@ Partial Class Form1
         '
         'ContactToolStripMenuItem
         '
-        Me.ContactToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WhatsappToolStripMenuItem, Me.TelegramToolStripMenuItem, Me.YouTubeToolStripMenuItem})
+        Me.ContactToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TelegramToolStripMenuItem, Me.YouTubeToolStripMenuItem})
         Me.ContactToolStripMenuItem.Name = "ContactToolStripMenuItem"
         Me.ContactToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.ContactToolStripMenuItem.Text = "Contact"
-        '
-        'WhatsappToolStripMenuItem
-        '
-        Me.WhatsappToolStripMenuItem.Image = Global.SendTo_Manager.My.Resources.Resources.whatsapp
-        Me.WhatsappToolStripMenuItem.Name = "WhatsappToolStripMenuItem"
-        Me.WhatsappToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.WhatsappToolStripMenuItem.Text = "Whatsapp"
         '
         'TelegramToolStripMenuItem
         '
@@ -280,7 +272,6 @@ Partial Class Form1
     Friend WithEvents SrtTitle As Label
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ContactToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents WhatsappToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TelegramToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DonateToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PaytmToolStripMenuItem As ToolStripMenuItem

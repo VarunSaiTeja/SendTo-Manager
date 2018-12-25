@@ -28,7 +28,7 @@
     <SupportUrl>https://github.com/varunsaiteja</SupportUrl>
     <ProductName>SendTo Manager</ProductName>
     <PublisherName>Varun</PublisherName>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -176,9 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\paytm.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\whatsapp.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\youtube.png" />
